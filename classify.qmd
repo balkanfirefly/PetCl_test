@@ -1,0 +1,29 @@
+---
+title: "Classifier"
+---
+
+#### Upload your pet picture here:
+
+<input id="photo" type="file">
+<div id="results"></div>
+<script>
+  async function loaded(reader) {
+    import { client } from "@gradio/client";
+
+    const response_0 = await fetch("https://huggingface.co/spaces/balkanfirefly/pet_classifier_test/blob/main/siamese.jpg");
+    const exampleImage = await response_0.blob();
+                
+    const app = await client("balkanfirefly/pet_classifier_test");
+    const result = await app.predict("/predict", [
+            exampleImage, 	// blob in 'img' Image component
+      ]);
+
+    console.log(result.data);
+  }
+  function read() {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => loaded(reader))
+    reader.readAsDataURL(photo.files[0]);
+  }
+  photo.addEventListener('input', read);
+</script>

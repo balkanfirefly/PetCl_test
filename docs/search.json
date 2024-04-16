@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "classify.html",
+    "href": "classify.html",
+    "title": "Classifier",
+    "section": "",
+    "text": "Upload your pet picture here:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome!\n\nThis is a basic website for the deployment of a basic pet classifying tool."
+  }
+]

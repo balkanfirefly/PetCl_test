@@ -1,0 +1,7 @@
+---
+title: ""
+---
+
+# Welcome!
+
+#### This is a basic website for the deployment of a basic [pet classifying](classify.qmd) tool.
