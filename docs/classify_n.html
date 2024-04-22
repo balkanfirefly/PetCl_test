@@ -134,45 +134,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="upload-your-pet-picture-here" class="level4">
 <h4 class="anchored" data-anchor-id="upload-your-pet-picture-here">Upload your pet picture here:</h4>
-&lt;!DOCTYPE html&gt;
-
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-Hugging Face API Demo
-</title>
-<!-- Add Gradio CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gradio/dist/css/gradio.min.css">
-
-
-<!-- Container for the Gradio interface -->
-<div id="gradio">
-
-</div>
-<!-- Add Gradio JS -->
-<script src="https://cdn.jsdelivr.net/npm/gradio/dist/js/gradio.min.js"></script>
-<script>
-        // Define the function to create the Gradio interface
-        function createGradio() {
-            // Define the Hugging Face API endpoint
-            const apiEndpoint = "https://huggingface.co/spaces/balkanfirefly/pet_classifier_test";
-
-            // Create the Gradio interface
-            const interface = gr.Interface.api(apiEndpoint, 'text', 'text', {
-                examples: [["Translate English to French", "Translate this English text to French."]],
-                description: "Translate text using Hugging Face models"
-            });
-
-            // Display the interface in the specified container
-            interface.render(document.getElementById("gradio"));
-        }
-
-        // Call the function to create the Gradio interface when the page loads
-        window.onload = createGradio;
-    </script>
-
-
+<script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.22.0/gradio.js"></script>
+<p><gradio-app src="https://balkanfirefly-pet-classifier-test.hf.space"></gradio-app></p>
 
 
 </section>
