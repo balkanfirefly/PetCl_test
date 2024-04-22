@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - classify.qmd
+      - classify_n.qmd
 
 format:
   html:

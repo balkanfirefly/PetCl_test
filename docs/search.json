@@ -7,6 +7,13 @@
     "text": "Upload your pet picture here:"
   },
   {
+    "objectID": "classify_n.html",
+    "href": "classify_n.html",
+    "title": "Classifier",
+    "section": "",
+    "text": "Upload your pet picture here:\n&lt;!DOCTYPE html&gt;\n\n\n\n\n\nHugging Face API Demo"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
